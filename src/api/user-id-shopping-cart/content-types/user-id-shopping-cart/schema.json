@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_id_shopping_carts",
+  "info": {
+    "singularName": "user-id-shopping-cart",
+    "pluralName": "user-id-shopping-carts",
+    "displayName": "userIdShoppingCart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "token": {
+      "type": "uid"
+    },
+    "information": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user.user"
+    },
+    "password": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    }
+  }
+}

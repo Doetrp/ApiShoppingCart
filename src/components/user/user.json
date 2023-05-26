@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_user_users",
+  "info": {
+    "displayName": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "biginteger",
+      "max": "100",
+      "min": "0",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "product": {
+      "displayName": "shoppingCart",
+      "type": "component",
+      "repeatable": true,
+      "component": "shopping-cart.shopping-cart"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_lists",
+  "info": {
+    "singularName": "order-list",
+    "pluralName": "order-lists",
+    "displayName": "orderList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "product": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shopping-cart.shopping-cart"
+    },
+    "subtotal": {
+      "type": "integer",
+      "required": true
+    },
+    "delivery": {
+      "type": "integer",
+      "required": true
+    },
+    "total": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

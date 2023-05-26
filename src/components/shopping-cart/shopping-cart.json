@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shopping_cart_shopping_carts",
+  "info": {
+    "displayName": "shoppingCart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "productId": {
+      "type": "integer",
+      "required": true
+    },
+    "quality": {
+      "type": "biginteger",
+      "min": "1"
+    }
+  }
+}
